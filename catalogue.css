@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(book.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.logo{
+    padding-left: 25%;
+    width: 220px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 70px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ad7100;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.main_box{
+    position: fixed;
+}
+.sidenav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 79px;
+    position: fixed;
+}
+.menu{
+    margin-top: -4%;
+    width: 20%;
+    height: auto;
+    background-color: gainsboro;
+}
+#label{
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 6px;
+    font-family: montserrat;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 14.5px;
+    letter-spacing: 2px;
+    display: list-item;
+    padding: 26.6px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.menu a:hover{
+    background-color: #ad7100;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+.section{
+    width: 100%;
+    margin-top: 8%;
+    position: fixed;
+    
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.5%;
+    
+}
+.cards .title{
+    width: 100%;
+    margin-top: 20px;
+}
+.cards .title h1{
+    text-align: center;
+    margin-left: 16%;
+    font-size: 30px;
+    color: #222;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+.cards .title h1:after{
+    content: "";
+    height: 5px;
+    width: 325px;
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+.card{
+    display: inline-flex;
+    padding-bottom: 8px;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgb(0,0,0,25%);
+    width: 200px;
+    height: 450px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+     margin-left: 5%;
+    margin-top: 5%;
+}
+.image-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-section img{
+    width: 100%;
+   
+}
+.description{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: -2px;
+    
+}
+.description h1{
+    font-size: 20px;
+    color: #222;
+    letter-spacing: 2px;
+    margin-top: 1px;
+}
+.description h2{
+    font-family: monserrat;
+    font-size: 18px;
+    color: #222;
+    margin-top: 5px;
+}
+.description p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+button{
+    width: 130px;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    cursor:pointer;
+    font-size: 10px;
+    position: relative;
+   
+
+
+}
+button:hover{
+    border: 2px;
+    color:darkred;
+    background-color:#ad7100;
+  
+}
